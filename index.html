@@ -20,14 +20,23 @@
       href="vendors/jquery-flipster/css/jquery.flipster.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="shortcut icon" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+    />
+    <link rel="stylesheet" href="css/accordion.css" />
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="mobile-menu-overlay"></div>
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="images/logo.svg" alt="Marshmallow"
+          ><img
+            style="width: 30%"
+            src="images/headerlogo.png"
+            alt="Marshmallow"
         /></a>
         <button
           class="navbar-toggler"
@@ -49,9 +58,9 @@
               class="logo-mobile-menu"
               alt="logo"
             />
-            <a href="javascript:;" class="close-menu"
+            <!-- <a href="javascript:;" class="close-menu"
               ><i class="mdi mdi-close"></i
-            ></a>
+            ></a> -->
           </div>
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
@@ -63,12 +72,10 @@
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">FAQs</a>
+              <a class="nav-link" href="#faqs">FAQs</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="complaints-handling-procedure.html"
-                >Complaints</a
-              >
+              <a class="nav-link" href="#complaints">Complaints</a>
             </li>
             <li class="nav-item">
               <a class="nav-link btn btn-success" href="#contact">Contact</a>
@@ -81,35 +88,39 @@
       <section id="home" class="home">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-md-8">
               <div class="main-banner">
                 <div class="d-sm-flex justify-content-between">
                   <div data-aos="zoom-in-up">
                     <div class="banner-title">
                       <h3 class="font-weight-medium">
-                        We Help Power Millions Of Businesses in 100+ Countries
+                        We Help Power Millions of Businesses All Over the UK.
                       </h3>
                     </div>
                     <p class="mt-3">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-
-                      <br />
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s,
+                      We give free advice to UK businesses, helping them to save
+                      money and increase profits. We get our clients the best
+                      deal on all of their utilities and ensure that this always
+                      remains the case for them. In so doing, we save you huge
+                      amounts of management time so that you can focus on your
+                      priorities to grow your business and achieve what you
+                      want. Manage your energy deals, broadband and card
+                      machine, at one click.
                     </p>
-                    <a href="#" class="btn btn-secondary mt-3">Learn more</a>
-                  </div>
-                  <div class="mt-5 mt-lg-0">
-                    <img
-                      src="images/group.png"
-                      alt="marsmello"
-                      class="img-fluid"
-                      data-aos="zoom-in-up"
-                    />
+                    <a href="#contact" class="btn btn-secondary mt-3"
+                      >Contact Us</a
+                    >
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="images/group.png"
+                alt="marsmello"
+                class="img-fluid"
+                data-aos="zoom-in-up"
+              />
             </div>
           </div>
         </div>
@@ -120,14 +131,64 @@
             <div class="col-sm-12">
               <h5 class="text-dark">We’re offering</h5>
               <h3 class="font-weight-medium text-dark mb-5">
-                Creative Digital Agency
+                Electricity, Gas, Broadband & Card machines for your businesses.
               </h3>
             </div>
           </div>
           <div class="row" data-aos="fade-up">
-            <div class="col-sm-4 text-center text-lg-left">
+            <div class="col-sm-6 text-center text-lg-left">
               <div
                 class="services-box"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="images/electricity.svg"
+                  alt="integrated-marketing"
+                  data-aos="zoom-in"
+                  style="width: 10%"
+                />
+                <h6 class="text-dark mb-3 mt-4 font-weight-medium">
+                  Electricity
+                </h6>
+                <p>
+                  We understand that energy costs can be volatile and often
+                  drive up the cost of electricity. To help combat this, we
+                  actively seek out contracts with fixed electricity tariffs.
+                  This helps to eliminate the insecurity of fluctuating
+                  electricity costs and gives our customers peace of mind.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 text-center text-lg-left">
+              <div
+                class="services-box"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="images/gas.svg"
+                  alt="design-development"
+                  data-aos="zoom-in"
+                  style="width: 10%"
+                />
+                <h6 class="text-dark mb-3 mt-4 font-weight-medium">Gas</h6>
+                <p>
+                  We offer a variety of gas suppliers from all across the
+                  mainland UK so that our customers can always find the best
+                  prices to fit their business demands. Customers can rely on
+                  our product that will meet their needs without any unexpected
+                  complications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row" data-aos="fade-up">
+            <div class="col-sm-6 text-center text-lg-left">
+              <div
+                class="services-box pb-lg-0"
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
@@ -136,16 +197,21 @@
                   src="images/integrated-marketing.svg"
                   alt="integrated-marketing"
                   data-aos="zoom-in"
+                  style="width: 10%"
                 />
                 <h6 class="text-dark mb-3 mt-4 font-weight-medium">
-                  Integrated Marketing
+                  Card Machines
                 </h6>
                 <p>
-                  Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum
+                  We understand that businesses need reliable and secure payment
+                  solutions that offer flexibility. That's why we offer a
+                  complete range of fast and reliable payment solutions, so you
+                  can give your business the best possible payment experience,
+                  whether it's credit cards, or debit cards.
                 </p>
               </div>
             </div>
-            <div class="col-sm-4 text-center text-lg-left">
+            <div class="col-sm-6 text-center text-lg-left">
               <div
                 class="services-box"
                 data-aos="fade-down"
@@ -153,100 +219,33 @@
                 data-aos-duration="1500"
               >
                 <img
-                  src="images/design-development.svg"
-                  alt="design-development"
-                  data-aos="zoom-in"
-                />
-                <h6 class="text-dark mb-3 mt-4 font-weight-medium">
-                  Design & Development
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-4 text-center text-lg-left">
-              <div
-                class="services-box"
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                <img
-                  src="images/digital-strategy.svg"
+                  src="images/communication.svg"
                   alt="digital-strategy"
                   data-aos="zoom-in"
+                  style="width: 11%"
                 />
                 <h6 class="text-dark mb-3 mt-4 font-weight-medium">
-                  Digital Strategy
+                  Telecommunications
                 </h6>
                 <p>
-                  Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum
+                  We offer a variety of communication solutions that are perfect
+                  for any type of business. From broadband to landline
+                  solutions, we have everything you need to give your Business
+                  the best possible experience. Whether you're a large
+                  corporation or a small business, we have the perfect solution
+                  for you.
                 </p>
               </div>
             </div>
           </div>
           <div class="row" data-aos="fade-up">
-            <div class="col-sm-4 text-center text-lg-left">
-              <div
-                class="services-box pb-lg-0"
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                <img
-                  src="images/digital-marketing.svg"
-                  alt="digital-marketing"
-                  data-aos="zoom-in"
-                />
-                <h6 class="text-dark mb-3 mt-4 font-weight-medium">
-                  Digital Marketing
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-4 text-center text-lg-left">
-              <div
-                class="services-box pb-lg-0"
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                <img
-                  src="images/growth-strategy.svg"
-                  alt="growth-strategy"
-                  data-aos="zoom-in"
-                />
-                <h6 class="text-dark mb-3 mt-4 font-weight-medium">
-                  Growth Strategy
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-4 text-center text-lg-left">
-              <div
-                class="services-box pb-0"
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                <img
-                  src="images/saving-strategy.svg"
-                  alt="saving-strategy"
-                  data-aos="zoom-in"
-                />
-                <h6 class="text-dark mb-3 mt-4 font-weight-medium">
-                  Saving Strategy
-                </h6>
-                <p>
-                  Lorem ipsum dolor sit amet, pretium pretium tempor.Lorem ipsum
-                </p>
-              </div>
-            </div>
+            <p class="col-12">
+              <b>
+                *We may receive a commission from the supplier once the sale is
+                completed and on supply. This is built in via an uplift added to
+                your final unit price and paid to us by the supplier.
+              </b>
+            </p>
           </div>
         </div>
       </section>
@@ -258,24 +257,32 @@
               <h3 class="font-weight-medium text-dark">
                 Discover New Idea With Us!
               </h3>
-              <h5 class="text-dark mb-3">
-                Imagination will take us everywhere
-              </h5>
+              <h5 class="text-dark mb-3">Your Business Utilities Expert</h5>
               <p class="font-weight-medium mb-4">
-                Lorem ipsum dolor sit amet, <br />
-                pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur
+                We are an experienced broker meaning we can help you take back
+                control of your utility costs.
               </p>
+
               <div class="d-flex justify-content-start mb-3">
                 <img src="images/tick.png" alt="tick" class="mr-3 tick-icon" />
-                <p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
+                <p class="mb-0">We Have Access to Preferential Pricing.</p>
               </div>
               <div class="d-flex justify-content-start mb-3">
                 <img src="images/tick.png" alt="tick" class="mr-3 tick-icon" />
-                <p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
+                <p class="mb-0">We Make it Personal.</p>
               </div>
-              <div class="d-flex justify-content-start">
+              <div class="d-flex justify-content-start mb-3">
                 <img src="images/tick.png" alt="tick" class="mr-3 tick-icon" />
-                <p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
+                <p class="mb-0">We Save Your Time and Money.</p>
+              </div>
+
+              <div class="d-flex justify-content-start mb-3">
+                <img src="images/tick.png" alt="tick" class="mr-3 tick-icon" />
+                <p class="mb-0">We Have Business Energy Expertise.</p>
+              </div>
+              <div class="d-flex justify-content-start mb-3">
+                <img src="images/tick.png" alt="tick" class="mr-3 tick-icon" />
+                <p class="mb-0">We Provide Fantastic Customer Service</p>
               </div>
             </div>
             <div
@@ -308,22 +315,22 @@
         >
           <div class="container">
             <div class="row mb-5">
-              <div class="col-sm-12">
+              <div class="col-12">
                 <div
-                  class="d-sm-flex justify-content-between align-items-center"
+                  class="d-flex justify-content-between align-items-center flex-column flex-md-row"
                 >
                   <img
                     src="images/companies/logo1.png"
                     style="width: 10%"
                     alt="deloit"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
                   <img
                     src="images/companies/logo2.png"
                     style="width: 16%"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-up"
                     data-aos-offset="-400"
                   />
@@ -331,7 +338,7 @@
                     src="images/companies/logo3.png"
                     style="width: 12%"
                     alt="netflix"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
@@ -339,7 +346,7 @@
                     src="images/companies/logo4.png"
                     style="width: 10%"
                     alt="instagram"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-up"
                     data-aos-offset="-400"
                   />
@@ -347,7 +354,7 @@
                     src="images/companies/logo5.png"
                     style="width: 13%"
                     alt="coinbase"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
@@ -357,13 +364,13 @@
             <div class="row mb-5">
               <div class="col-sm-12">
                 <div
-                  class="d-sm-flex justify-content-between align-items-center"
+                  class="d-flex justify-content-between align-items-center flex-column flex-md-row"
                 >
                   <img
                     src="images/companies/logo6.png"
                     style="width: 10%"
                     alt="deloit"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
@@ -371,7 +378,7 @@
                     src="images/companies/logo8.png"
                     style="width: 12%"
                     alt="erricson"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-up"
                     data-aos-offset="-400"
                   />
@@ -379,7 +386,7 @@
                     src="images/companies/logo9.png"
                     style="width: 15%"
                     alt="netflix"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
@@ -387,7 +394,7 @@
                     src="images/companies/logo10.png"
                     style="width: 10%"
                     alt="instagram"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-up"
                     data-aos-offset="-400"
                   />
@@ -395,7 +402,7 @@
                     src="images/companies/logo11.png"
                     style="width: 10%"
                     alt="coinbase"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
@@ -405,13 +412,13 @@
             <div class="row mb-5">
               <div class="col-sm-12">
                 <div
-                  class="d-sm-flex justify-content-between align-items-center"
+                  class="d-flex justify-content-between align-items-center flex-column flex-md-row"
                 >
                   <img
                     src="images/companies/logo12.png"
                     style="width: 13%"
                     alt="deloit"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
@@ -419,7 +426,7 @@
                     src="images/companies/logo13.png"
                     style="width: 8%"
                     alt="erricson"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-up"
                     data-aos-offset="-400"
                   />
@@ -427,7 +434,7 @@
                     src="images/companies/logo14.png"
                     style="width: 10%"
                     alt="netflix"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-down"
                     data-aos-offset="-400"
                   />
@@ -435,7 +442,23 @@
                     src="images/companies/logo15.png"
                     style="width: 5%"
                     alt="instagram"
-                    class="p-2 p-lg-0"
+                    class="p-2 p-lg-0 logo-img"
+                    data-aos="fade-up"
+                    data-aos-offset="-400"
+                  />
+                  <img
+                    src="images/companies/logo16.png"
+                    style="width: 10%"
+                    alt="instagram"
+                    class="p-2 p-lg-0 logo-img"
+                    data-aos="fade-up"
+                    data-aos-offset="-400"
+                  />
+                  <img
+                    src="images/companies/logo17.png"
+                    style="width: 10%"
+                    alt="instagram"
+                    class="p-2 p-lg-0 logo-img"
                     data-aos="fade-up"
                     data-aos-offset="-400"
                   />
@@ -446,6 +469,196 @@
         </section>
       </section>
 
+      <section class="contactus" id="faqs">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-sm-12">
+              <div
+                class="d-sm-flex justify-content-between align-items-center mb-2"
+              >
+                <h3 class="font-weight-medium text-dark">
+                  Frequently Asked Questions
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <ul class="accordionjs my-accordion">
+                <li>
+                  <div class="title">When does my contract finish?</div>
+                  <div>
+                    The time remaining on your contract can be obtained from
+                    your supplier or alternatively by giving authority to us in
+                    a form of a letter of authority (LOA) and we will do the
+                    rest
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">What is a supply number?</div>
+                  <div>
+                    Supply numbers is a specific piece of information that
+                    relates to you site which identifies address’, meter type
+                    and helps to get accurate quotations.
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">Can I get cheaper prices?</div>
+                  <div>
+                    Out of contract prices and deemed rates are notoriously high
+                    and large savings are easily made should you be coming to
+                    the end of your contract the constantly changing market can
+                    benefit you when looking for a cheaper supplier.
+                  </div>
+                </li>
+                <li>
+                  <div class="title">How long does it take to transfer?</div>
+                  <div>
+                    For customers out of contract, an application generally
+                    takes between 4-6 weeks as per the standard transfer
+                    process. Please be advised that further delays may occur if
+                    your supplier objects to the transfer. If you are still in a
+                    contract, supply will commence a day after your contract
+                    expires.
+                  </div>
+                </li>
+                <li>
+                  <div class="title">What if I have multi sites?</div>
+                  <div>
+                    We can arrange for more than one site on the basis that each
+                    meter is either out of contract or within the 120 day
+                    tolerance window prior to the end of a contract.
+                  </div>
+                </li>
+                <li>
+                  <div class="title">Will my tariff be effected?</div>
+                  <div>
+                    Your tariff is linked to your meter and will remain the same
+                    regardless of supplier.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <ul class="accordionjs my-accordion">
+                <!-- Section 1 -->
+                <li>
+                  <div class="title">How does an energy broker get paid?</div>
+                  <div>
+                    The majority of brokers, including Pay4less Energy use a
+                    commission-based payment method. This means that the
+                    supplier offers you a small uplift in the form of a unit
+                    rate which will be paid to the broker. For example, your
+                    unit rate is 30p and broker add 1p uplift in it then the
+                    final unit rate will be 31p
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">
+                    Do I need to change any pipes or wires if I change
+                    suppliers?
+                  </div>
+                  <div>
+                    The majority of brokers, including Pay4less Energy use a
+                    commission-based payment method. This means that the
+                    supplier offers you a small uplift in the form of a unit
+                    rate which will be paid to the broker. For example, your
+                    unit rate is 30p and broker add 1p uplift in it then the
+                    final unit rate will be 31p
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">What is an LOA?</div>
+                  <div>
+                    A letter of authority (LOA) is a legal documentation that
+                    hands over authority to us so that we can deal with your
+                    current supplier when transferring you leaving you with
+                    minimal hassle
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">Do I need to sign an LOA?</div>
+                  <div>
+                    It is not mandatory to sign an LOA as you do reserve the
+                    right to deal with matters independently, however it is
+                    advisable as it may ensure a swift transfer. An LOA is
+                    available on request and we will forward it to your supplier
+                    once you have signed it.
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">
+                    Does an LOA hand over full rights to you?
+                  </div>
+                  <div>
+                    There are various levels to an LOA which will be highlighted
+                    on the document itself. The level you sign is at your
+                    discretion and will solely be used for the transfer of your
+                    utilities once you have agreed. Once transfer is completed,
+                    the LOA is void and disregarded.
+                  </div>
+                </li>
+
+                <li>
+                  <div class="title">What are your fees?</div>
+                  <div>
+                    PriceCut charge no fees to our customers as our
+                    payments/commissions are recovered from the supplier.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="complaints" id="complaints">
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="col-sm-12">
+              <h3 class="font-weight-medium text-dark mb-5">Complaints</h3>
+            </div>
+          </div>
+          <div class="row mb-4" data-aos="fade-up">
+            <p class="desc mb-2">
+              Please reach out to us by any of the below contact methods and let
+              us know about the problem you're experiencing. The more
+              information you can provide, the better we'll be able to
+              understand the issue and resolve it more quickly.
+              <br />
+              <br />
+              If you have any complaints, please contact us by the following
+              means:
+            </p>
+            <ul>
+              <li>Call us on 07576503089 or 02085506625</li>
+              <br />
+              <li>
+                Email Us:
+                <a href="mailto:pricecutltd@gmail.com">pricecutltd@gmail.com</a>
+              </li>
+              <br />
+
+              <li>Write to us: 32 Geneva, Gardens, London, RM6 6SP</li>
+            </ul>
+          </div>
+          <div class="row" data-aos="fade-up">
+            <a
+              href="complaints-handling-procedure.html"
+              class="btn btn-secondary mt-3"
+              >Our Complaint Handling Procedure</a
+            >
+          </div>
+        </div>
+      </section>
+
       <section class="contactus" id="contact">
         <div class="container">
           <div class="row mb-5 pb-5">
@@ -454,12 +667,31 @@
             </div>
             <div class="col-sm-7" data-aos="fade-up" data-aos-offset="-500">
               <h3 class="font-weight-medium text-dark mt-5 mt-lg-0">
-                Got A Problem
+                Contact Us
               </h3>
-              <h5 class="text-dark mb-5">
-                Lorem ipsum dolor sit amet, consectetur pretium
-              </h5>
-              <form>
+              <p class="text-dark mb-1">Contact us by following means:</p>
+              <div class="row mb-2">
+                <div class="col-12 mb-1">
+                  Address: <b>32 Geneva, Gardens, London, RM6 6SP</b>
+                </div>
+                <div class="col-12 mb-1">
+                  Email:
+                  <b
+                    ><a href="mailto:pricecutltd@gmail.com"
+                      >pricecutltd@gmail.com</a
+                    ></b
+                  >
+                </div>
+                <div class="col-12">Phone: <b>07576503089</b></div>
+              </div>
+              <p>OR</p>
+              <p>
+                <b
+                  >If you want to speak to us over the phone, please leave your
+                  details and one of our experts will get in touch with you.</b
+                >
+              </p>
+              <form id="email-contact">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -468,6 +700,8 @@
                         class="form-control"
                         id="name"
                         placeholder="Name*"
+                        name="name"
+                        required
                       />
                     </div>
                   </div>
@@ -478,6 +712,32 @@
                         class="form-control"
                         id="mail"
                         placeholder="Email*"
+                        name="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        name="telephone"
+                        class="form-control"
+                        id="telephone"
+                        placeholder="Telephone"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Subject"
+                        required
+                        name="subject"
                       />
                     </div>
                   </div>
@@ -489,11 +749,14 @@
                         class="form-control"
                         placeholder="Message*"
                         rows="5"
+                        required
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-sm-12">
-                    <a href="#" class="btn btn-secondary">SEND</a>
+                    <button type="submit" class="btn btn-secondary">
+                      SEND
+                    </button>
                   </div>
                 </div>
               </form>
@@ -508,61 +771,44 @@
           <div class="row">
             <div class="col-sm-6">
               <address>
-                <p>143 castle road 517</p>
-                <p class="mb-4">district, kiyev port south Canada</p>
+                <p class="mb-4">32 Geneva, Gardens, London, RM6 6SP</p>
                 <div class="d-flex align-items-center">
-                  <p class="mr-4 mb-0">+3 123 456 789</p>
-                  <a href="mailto:info@yourmail.com" class="footer-link"
-                    >info@yourmail.com</a
-                  >
+                  <p class="mr-4 mb-0">02085506625 | 07576503089</p>
                 </div>
                 <div class="d-flex align-items-center">
-                  <p class="mr-4 mb-0">+1 222 345 342</p>
-                  <a href="mailto:Marshmallow@yourmail.com" class="footer-link"
-                    >Marshmallow@yourmail.com</a
+                  <a href="mailto:pricecutltd@gmail.com" class="footer-link"
+                    >pricecutltd@gmail.com</a
                   >
                 </div>
               </address>
-              <div class="social-icons">
-                <h6 class="footer-title font-weight-bold">Social Share</h6>
-                <div class="d-flex">
-                  <a href="#"><i class="mdi mdi-github-circle"></i></a>
-                  <a href="#"><i class="mdi mdi-facebook-box"></i></a>
-                  <a href="#"><i class="mdi mdi-twitter"></i></a>
-                  <a href="#"><i class="mdi mdi-dribbble"></i></a>
-                </div>
-              </div>
             </div>
             <div class="col-sm-6">
               <div class="row">
-                <div class="col-sm-4">
-                  <h6 class="footer-title">Social Share</h6>
+                <div class="col-sm-6">
+                  <h6 class="footer-title">Site Links</h6>
                   <ul class="list-footer">
                     <li><a href="#" class="footer-link">Home</a></li>
-                    <li><a href="#" class="footer-link">About</a></li>
-                    <li><a href="#" class="footer-link">Services</a></li>
-                    <li><a href="#" class="footer-link">Portfolio</a></li>
-                    <li><a href="#" class="footer-link">Contact</a></li>
-                  </ul>
-                </div>
-                <div class="col-sm-4">
-                  <h6 class="footer-title">Product</h6>
-                  <ul class="list-footer">
                     <li>
-                      <a href="#" class="footer-link">Digital Marketing</a>
+                      <a href="#services" class="footer-link">Services</a>
                     </li>
-                    <li><a href="#" class="footer-link">Web Development</a></li>
-                    <li><a href="#" class="footer-link">App Development</a></li>
-                    <li><a href="#" class="footer-link">Design</a></li>
+                    <li><a href="#faqs" class="footer-link">FAQs</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
                   </ul>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                   <h6 class="footer-title">Company</h6>
                   <ul class="list-footer">
-                    <li><a href="#" class="footer-link">Partners</a></li>
-                    <li><a href="#" class="footer-link">Investors</a></li>
-                    <li><a href="#" class="footer-link">Partners</a></li>
-                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li>
+                      <a
+                        href="complaints-handling-procedure.html"
+                        class="footer-link"
+                        >Complaints Handling Procedure</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#complaints" class="footer-link">Complaints</a>
+                    </li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -571,10 +817,77 @@
         </div>
       </div>
     </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
     <script src="vendors/base/vendor.bundle.base.js"></script>
     <script src="vendors/owl.carousel/js/owl.carousel.js"></script>
     <script src="vendors/aos/js/aos.js"></script>
     <script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
     <script src="js/template.js"></script>
+    <script src="js/accordion.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".my-accordion").accordionjs({
+          closeAble: true,
+          closeOther: true,
+          slideSpeed: 150,
+          activeIndex: false,
+          openSection: function (section) {},
+          beforeOpenSection: function (section) {},
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("86tt7rjhfMyKELyVP");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("email-contact")
+          .addEventListener("submit", async function (event) {
+            event.preventDefault();
+            try {
+              await emailjs.sendForm(
+                "service_0o1ie67",
+                "template_j5mzamz",
+                this
+              );
+              this.reset();
+              toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: false,
+                progressBar: true,
+                positionClass: "toast-bottom-left",
+                preventDuplicates: false,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: "5000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+              };
+              toastr["success"]("Message Sent, we will contact you soon");
+            } catch (error) {
+              console.log("FAILED...", error);
+            }
+          });
+      };
+    </script>
   </body>
 </html>

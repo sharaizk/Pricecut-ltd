@@ -19017,5 +19017,9 @@ section {
 .flipster-custom-nav .flipster-custom-nav-item .flipster-custom-nav-link.active {
   background: #f1efef;
 }
-
+@media screen and (max-width:768px) {
+  .logo-img{
+    width: 40% !important;
+  }
+}
 /*# sourceMappingURL=maps/style.css.map */
