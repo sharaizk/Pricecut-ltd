@@ -18431,6 +18431,10 @@ h6, .h6 {
   background: #3c37f1;
 }
 
+.small-img{
+  width: 40%;
+}
+
 @media (max-width: 991px) {
   .navbar {
     padding: .875rem 1rem;
